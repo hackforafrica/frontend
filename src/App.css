@@ -3,7 +3,6 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  background-color: rgb(255, 245, 238);
 }
 

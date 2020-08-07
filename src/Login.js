@@ -23,8 +23,11 @@ function Login() {
       </InputAdornment>
         }
    />
-   <button className='login__button'type='submit'>LOG IN</button>
    <p className='info'>To keep up the pace login with your personal info</p>
+   <button className='login__button'type='submit'>LOG IN</button>
+   {/*<p className='sign_up'>Don't have an account*/}
+     {/* <button className='signbutton'>SIGN UP</button>
+   </p>*/}
   </div>
  )
 }

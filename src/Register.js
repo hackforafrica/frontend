@@ -1,5 +1,6 @@
 import React from 'react';
 import './Register.css';
+import {Link} from 'react-router-dom';
 import IconButton from '@material-ui/core/IconButton';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GTranslateIcon from '@material-ui/icons/GTranslate';
@@ -39,6 +40,9 @@ function Register() {
       </InputAdornment>
      }
    />
+   <Link to='/Login'>
+    <button className='signup-button'>SIGN UP</button>
+   </Link>
   </div>
  )
 }
