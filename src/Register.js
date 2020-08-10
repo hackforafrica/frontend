@@ -40,7 +40,7 @@ function Register() {
       </InputAdornment>
      }
    />
-   <Link to='/Login'>
+   <Link to='/Main'>
     <button className='signup-button'>SIGN UP</button>
    </Link>
   </div>

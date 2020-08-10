@@ -83,17 +83,20 @@ h1{
  font-size: 19px;
  text-align: center;
  margin:10px;
+ margin-bottom:0;
  padding:10px;
  color:black;
 }
-.signbutton{
-  margin-left:5px;
-  color:purple;
-  font-size:13px;
-  letter-spacing: 1px;
-  border:0.5px solid purple;
-  padding: 3px;
-  border-radius:25px;
+.click__signup{
+  margin-left: 150px;
+  margin-top:0px;
+  text-decoration: none;
+  border:1px solid  black;
   background: white;
-  cursor:pointer;
+  color:purple;
+  font-weight: bold;
+  font-size:12px;
+  letter-spacing: 1px;
+  
+
 }

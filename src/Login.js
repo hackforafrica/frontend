@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './Login.css';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import EmailIcon from '@material-ui/icons/Email';
@@ -24,8 +25,12 @@ function Login() {
         }
    />
    <p className='info'>To keep up the pace login with your personal info</p>
-   <button className='login__button'type='submit'>LOG IN</button>
-   {/*<p className='sign_up'>Don't have an account*/}
+   <Link to='/Main'>
+     <button className='login__button'type='submit'>LOG IN</button>
+   </Link>
+   <p className='sign_up'>Don't have an account</p>
+    <Link to='/Register' className='click__signup'>CLICK HERE
+    </Link>
      {/* <button className='signbutton'>SIGN UP</button>
    </p>*/}
   </div>
