@@ -9,7 +9,7 @@ import Input from '@material-ui/core/Input';
 function Login() {
  return (
   <div className='Login__page'>
-   <h1>Welcome Back!</h1>
+   <h1>Nice to see you Back!</h1>
    <Input className='mail' placeholder='email' type='email'disableUnderline='true'
      startAdornment={
       <InputAdornment position="start">
