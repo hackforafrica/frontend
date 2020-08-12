@@ -1,9 +1,21 @@
-import React from 'react'
+import React from 'react';
+import './Main.css';
+import {Link} from 'react-router-dom';
 
 function Main() {
+ const navStyle = {
+  color:'white'
+ };
  return (
   <div>
-   <h1>MAIN PAGE</h1>
+   <nav className='Main__nav'>
+    <h5>LOGO</h5>
+    <ul>
+     <Link style={navStyle} to='/About'>
+      <li>About</li>
+     </Link>
+    </ul>
+   </nav>
   </div>
  )
 }

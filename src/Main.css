@@ -1,0 +1,8 @@
+.Main__nav{
+ background-color: rgb(211, 25, 211);
+ display:flex;
+ justify-content: space-around;
+ align-items: center;
+ width:100vw;
+ min-height: 10vh;
+}

@@ -1,9 +1,6 @@
 import React from 'react';
 import './Register.css';
 import {Link} from 'react-router-dom';
-import IconButton from '@material-ui/core/IconButton';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import GTranslateIcon from '@material-ui/icons/GTranslate';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
@@ -12,12 +9,9 @@ import Input from '@material-ui/core/Input';
 
 function Register() {
  return (
+<div className='registerStyle'>
   <div className='register__page'>
    <h1>CREATE ACCOUNT</h1>
-   <IconButton color='primary'className='register-button'>
-    <FacebookIcon className='register__icon'/>
-    <GTranslateIcon className='register__icon'/>
-   </IconButton>
    <Input className='name' placeholder='name' type='text'disableUnderline='true'
      startAdornment={
       <InputAdornment position="start">
@@ -43,6 +37,7 @@ function Register() {
    <Link to='/Main'>
     <button className='signup-button'>SIGN UP</button>
    </Link>
+  </div>
   </div>
  )
 }
