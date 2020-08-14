@@ -1,29 +1,30 @@
 .Abts  {
+    margin-left: 2px;
     text-align: center;
     background-color: white;
   }
 
   .AM  {
     align-self: start;
-    margin: auto;
+    margin-left: 2px;
     background-color: white;
   }
 
   .BY  {
     text-align: center;
-    margin: auto;
+    margin-left: 2px;
     background-color: white;
   }
 
   .KM  {
     align-self: start;
-    margin: 2px;
+    margin-left: 2px;
     background-color: white;
   }
 
   .LD  {
     align-self: start;
-    margin: auto;
+    margin-left: 2px;
     background-color: white;
   }
 

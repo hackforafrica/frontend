@@ -2,9 +2,11 @@ import React from 'react'
 
 function About() {
  return (
-  <div class="Abts"  > ABOUT US
+  <div class="Abts"  > 
+          
+          <p>About Us</p>
 
-      <ul class= "AM"> 
+      <ul class= "AM" > 
          - ANN MAINA : Leader Frontend Development of the project "Operation 100 for Africa"
        </ul> 
        <ul class="BY"> 
@@ -27,11 +29,13 @@ function About() {
  */ }</p> 
   {/*remember to apply styling by creating another page About.css
   we are using a unique color in all pages which is a purple and different shades of purple */}
-  <p>{/*this is another component that will hold info about contacting us  */}</p>
- <footer>{ 
+  <p> Contact us </p>
+  <p></p>
+  <p></p>
+  <p></p>
+ <footer> 
              <span> Copyright (C), August 2020, KYMBALD ALLIANCE </span>
-
-         }</footer> 
+ </footer> 
   </div>
  )
 }
