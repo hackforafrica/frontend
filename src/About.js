@@ -24,12 +24,10 @@ function About() {
 
     }
    </nav>
- <p>{ /*
-        
- */ }</p> 
-  {/*remember to apply styling by creating another page About.css
-  we are using a unique color in all pages which is a purple and different shades of purple */}
-  <p> Contact us </p>
+ 
+  <p> 
+    Contact us 
+  </p>
   <div class="EmailToCUs" >
   <p>Your Email ID for Feedback </p>
   <input placeholder="Email" type="text" class="EmailToCUs" /> 
