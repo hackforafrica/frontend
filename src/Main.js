@@ -1,8 +1,49 @@
-import React from 'react';
+import React, {useState , useEffect} from 'react';
 import './Main.css';
 import {Link} from 'react-router-dom';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+
 
 function Main() {
+  let motivationBackground=document.querySelector('.motivationOne');
+  let next=document.querySelector('.next');
+  let prev=document.querySelector('.prev');
+  const nextFunction = ()=>{
+    if(motivationBackground)
+      {/*motivationBackground.innerHTML = motivations[Math.floor(Math.random()*motivations.length)];*/}
+      {
+        motivations.map((motivation)=>(
+          motivationBackground.innerHTML = motivations[Math.floor(Math.random()*motivations.length)].statement
+        ))
+        
+      }
+  }
+  const [motivations,setMotivations]=useState([]);
+ useEffect(()=>{
+  //async code
+  const getMotivationsData = async () =>{
+    await fetch( "https://hackforafrica.herokuapp.com/motivation")
+    .then((response)=>response.json())
+    .then((data)=>{
+      console.log(data);
+      const motivations = data.map((motivation)=>(
+        {
+          number: motivation.motivation_id,//motivationid
+          statement: motivation.quote,//motivation quote
+          name:motivation.quoteby// author 
+        }
+        
+      ))
+      setMotivations(motivations);
+      console.log(motivations[2]);
+      document.querySelector('.motivationOne').innerHTML=motivations[0].statement;
+    })
+  
+  }
+  getMotivationsData();
+ },[])
+
  const navStyle = {
   color:'white'
  };
@@ -16,6 +57,13 @@ function Main() {
      </Link>
     </ul>
    </nav>
+    <div className='motivation__page'>
+     <div className='Main__motivation'>
+      <ArrowBackIosIcon className='prev' onClick={nextFunction}/>
+     <h3 className='motivationOne'></h3>
+      <ArrowForwardIosIcon className='next' onClick={nextFunction}/>
+     </div>
+    </div>
   </div>
  )
 }
