@@ -30,9 +30,15 @@ function About() {
   {/*remember to apply styling by creating another page About.css
   we are using a unique color in all pages which is a purple and different shades of purple */}
   <p> Contact us </p>
-  <p></p>
-  <p></p>
-  <p></p>
+  <div class="EmailToCUs" >
+  <p>Your Email ID for Feedback </p>
+  <input placeholder="Email" type="text" class="EmailToCUs" /> 
+  </div>
+  <div class="Describ" >
+  <p>Please Describe your Message </p>
+  <input placeholder="Message Description" type="text" class="Describ" /> 
+  </div>
+  
  <footer> 
              <span> Copyright (C), August 2020, KYMBALD ALLIANCE </span>
  </footer> 
