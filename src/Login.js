@@ -6,20 +6,28 @@ import EmailIcon from '@material-ui/icons/Email';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import Input from '@material-ui/core/Input';
 function Login() {
- const [user_id,setuser_id]=useState('');
  const [passw,setPass] = useState('');
   const [emailA,setemailA]=useState('');
  const loginFunction = async (event)=>{
   event.preventDefault();
   try{
     const body = {emailaddress:emailA,passw:passw};
+    let obj;
     const response = await fetch("http://hackforafrica.herokuapp.com/login",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(body)
     })
-     
-    window.location = '/';
+    .then((response)=>response.json())
+    .then((response)=>{ obj=response;
+      console.log(obj);
+    if (obj != 'unsuccess'){window.location='/Main'}else{
+      alert('you dont have an account');
+    }})
+    //.then((response)=>{console.log(response)})
+    response.json().then((data)=>{
+      console.log(data)})
+    //window.location = '/Main';
   }
   catch(error){
     console.log(error.message);
