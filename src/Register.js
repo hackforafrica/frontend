@@ -23,7 +23,7 @@ function Register() {
       .then((response)=>response.json())
       .then((response)=>{data=response;
       console.log(data)
-    if (data =''){
+    if (data !==''){
       window.location='/';
     }
   else{

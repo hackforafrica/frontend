@@ -33,43 +33,34 @@
    height:40%;
    width:230px;
    margin-top:10px;
+   cursor: pointer;
  }
  #email_field{
    width:200px;
    margin-bottom:10px;
+   cursor:pointer;
  }
  button{
-   width:60px;
+   
+   margin-left:360px;
+   color:white;
+   background-color: rgb(211, 25, 211);
+   cursor:pointer;
+   margin-top: 10px;
   
  }
-  .AM  {
-    align-self: start;
-    margin-left: 2px;
-    background-color: white;
+  footer{
+    background-color:rgb(211, 25, 211);
+    min-height:10vh;
+    width:100vw;
+    align-items: center;
+    justify-content: center;
   }
-
-  .BY  {
-    text-align: center;
-    margin-left: 2px;
-    background-color: white;
-  }
-
-  .KM  {
-    align-self: start;
-    margin-left: 2px;
-    background-color: white;
-  }
-
-  .LD  {
-    align-self: start;
-    margin-left: 2px;
-    background-color: white;
-  }
-
-  .EmailToCUs
-  {
-    margin-left: 20px;
-  }
-
+   .logo{
+    color:black;
+    font-weight:bold;
+    font-size:20px;
+    margin-left:250px;
+   }
 
 
