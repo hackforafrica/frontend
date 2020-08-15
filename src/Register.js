@@ -14,13 +14,22 @@ function Register() {
     event.preventDefault();
     try{
       const bodyt = {fullname:fname,emailaddress:emailA,passw:passw};
+      let data;
       const response = await fetch("http://hackforafrica.herokuapp.com/register",{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify(bodyt)
       })
-      
-      window.location = '/';
+      .then((response)=>response.json())
+      .then((response)=>{data=response;
+      console.log(data)
+    if (data =''){
+      window.location='/';
+    }
+  else{
+    alert('enter your details please');
+  }})
+    
     }
     catch(error){
       console.log(error.message);

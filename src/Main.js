@@ -7,8 +7,6 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
 function Main() {
   let motivationBackground=document.querySelector('.motivationOne');
-  let next=document.querySelector('.next');
-  let prev=document.querySelector('.prev');
   const nextFunction = ()=>{
     if(motivationBackground)
       {/*motivationBackground.innerHTML = motivations[Math.floor(Math.random()*motivations.length)];*/}

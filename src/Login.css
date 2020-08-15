@@ -67,7 +67,7 @@ h1{
 }
 .login__button{
  cursor: pointer;
- border-radius: 5em;
+ border-radius: 3px;
  color: #fff;
  background: linear-gradient(to right, #9C27B0, #E040FB);
  border: 0;

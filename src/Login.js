@@ -21,13 +21,11 @@ function Login() {
     .then((response)=>response.json())
     .then((response)=>{ obj=response;
       console.log(obj);
-    if (obj != 'unsuccess'){window.location='/Main'}else{
+    if (obj !== 'unsuccess'){window.location='/Main'}else{
       alert('you dont have an account');
     }})
-    //.then((response)=>{console.log(response)})
     response.json().then((data)=>{
       console.log(data)})
-    //window.location = '/Main';
   }
   catch(error){
     console.log(error.message);

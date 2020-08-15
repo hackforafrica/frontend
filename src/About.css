@@ -1,9 +1,47 @@
-.Abts  {
-    margin-left: 2px;
-    text-align: center;
-    background-color: white;
+.About_nav{
+  background-color: rgb(211, 25, 211);
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  width:100vw;
+  min-height: 10vh;
   }
-
+ h6{
+   font-weight: bold;
+   font-size: 20px;
+   margin:7px 30%;
+   text-decoration: underline;
+ }
+ .about_info{
+   background-color: rgb(255, 251, 251);
+ }
+ form{
+   display:flex;
+   flex-direction: column;
+   width:60%;
+   height:400px;
+   background-color:white;
+   margin-left:80px;
+ }
+ .form_input{
+   margin-left:20%;
+   margin-top:10%;
+   text-align: center;
+   border:2px solid black;
+ }
+ #text_field{
+   height:40%;
+   width:230px;
+   margin-top:10px;
+ }
+ #email_field{
+   width:200px;
+   margin-bottom:10px;
+ }
+ button{
+   width:60px;
+  
+ }
   .AM  {
     align-self: start;
     margin-left: 2px;
