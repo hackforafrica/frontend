@@ -1,35 +1,43 @@
-import React from 'react';
+import React ,{useState}from 'react';
 import {Link} from 'react-router-dom';
 import './Login.css';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import EmailIcon from '@material-ui/icons/Email';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import Input from '@material-ui/core/Input';
-
-
 function Login() {
-  const loginFunction = async()=>{await fetch("http://hackforafrica.herokuapp.com/login", {
-    method: "POST",
-    headers: { "Content-Type": "application/json"},
-    body: JSON.stringify({'emailaddress':'ann@gmail.com','passw':'123456789'})
-})
-.then((response)=>response.json())
-.then((data)=>{
-  console.log(data)});}
-    
+ const [user_id,setuser_id]=useState('');
+ const [passw,setPass] = useState('');
+  const [emailA,setemailA]=useState('');
+ const loginFunction = async (event)=>{
+  event.preventDefault();
+  try{
+    const body = {emailaddress:emailA,passw:passw};
+    const response = await fetch("http://hackforafrica.herokuapp.com/login",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(body)
+    })
+     
+    window.location = '/';
+  }
+  catch(error){
+    console.log(error.message);
+  }
+}
   
  return (
    <div className='LoginStyle'>
     <div className='Login__page'>
        <h1>Welcome Back!</h1>
-       <Input className='mail' placeholder='email'       type='email'disableUnderline='true'
+       <Input className='mail' placeholder='email'  value={emailA}     type='email'disableUnderline='true'onChange={event=>setemailA(event.target.value)}
        startAdornment={
         <InputAdornment position="start">
         <VisibilityOffIcon/>
         </InputAdornment>
         }
        />
-       <Input className='pass' placeholder='password' type='password'disableUnderline='true'
+       <Input className='pass' placeholder='password' value={passw}type='password'disableUnderline='true'onChange={event=>setPass(event.target.value)}
        startAdornment={
        <InputAdornment position="start">
         <EmailIcon/>
