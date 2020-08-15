@@ -28,7 +28,7 @@ function About() {
       <form>
         <input className='form_input' type='email'id='email_field'placeholder='name@gmail.com'/>
         <input className='form_input'id='text_field' type='text'placeholder='Send us a message'/>
-        <button>SEND</button>
+        <button className='form_button'>SEND</button>
       </form>
     </div>
     <footer>

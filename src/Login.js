@@ -13,7 +13,7 @@ function Login() {
   try{
     const body = {emailaddress:emailA,passw:passw};
     let obj;
-    const response = await fetch("http://hackforafrica.herokuapp.com/login",{
+    const response = await fetch("https://hackforafrica.herokuapp.com/login",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(body)

@@ -31,17 +31,18 @@
  }
  #text_field{
    height:40%;
-   width:230px;
+   width:60%vw;
    margin-top:10px;
    cursor: pointer;
  }
  #email_field{
-   width:200px;
+   width:60%vw;
    margin-bottom:10px;
    cursor:pointer;
+   height:10%;
  }
- button{
-   
+ .form_button{
+   width:60px;
    margin-left:360px;
    color:white;
    background-color: rgb(211, 25, 211);
