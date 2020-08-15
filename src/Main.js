@@ -63,6 +63,7 @@ function Main() {
      <h3 className='motivationOne'></h3>
       <ArrowForwardIosIcon className='next' onClick={nextFunction}/>
      </div>
+     <div className='speech__page'>yeeeeeeeeeeeeeeeeeeeee </div>
     </div>
   </div>
  )

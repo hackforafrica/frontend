@@ -9,11 +9,29 @@
 .motivation__page{
  display:flex;
  flex-direction: column;
- background-color: seagreen;
+ background-color: white;
 }
 .Main__motivation{
- background-color: white;
+ background-color:white;
  height:60%;
  padding:10px;
 
+}
+.motivationOne{
+ justify-content: center;
+ align-items: center;
+ background-color: white;
+ padding-left: 30px;
+ font-size: 19px;
+}
+.prev, .next{
+ padding:4px ;
+ background-color: white;
+ margin-left:250px;
+ color:purple;
+ cursor: pointer;
+ 
+}
+.next{
+ margin-top:10px;
 }
