@@ -4,6 +4,7 @@ import './StyleForRecorder.css';
 function Record() {
  //bootstrap link on the index.html file
  //script tags in index.html
+ // PUT THE JS CODE HERE
  return (
   <div>
    <h1>Simple Recorder.js demo</h1>
