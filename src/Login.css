@@ -5,107 +5,107 @@
  box-sizing:border-box;
 }
 .LoginStyle{
-  margin: auto;
+  margin: auto!important;
 
 }
 
 .Login__page{
-  background-color: rgb(246, 247, 248);
-  width: 400px;
-  height: 500px;
-  border-radius:25px;
-  border:0.5px solid black;
-  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  background-color: rgb(246, 247, 248)!important;
+  width: 400px!important;
+  height: 500px!important;
+  border-radius:25px!important;
+  border:0.5px solid black!important;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14)!important;
   
 }
 h1{
- text-align: center;
- padding: 10px;
- color: rgb(211, 25, 211);
- font-weight: bold;
- font-size: 26px;
- text-decoration: underline;
+ text-align: center!important;
+ padding: 10px!important;
+ color: rgb(211, 25, 211)!important;
+ font-weight: bold!important;
+ font-size: 26px!important;
+ text-decoration: underline!important;
 }
 
 .mail {
   width:76%;
   cursor: pointer!important;
-  background-color: aliceblue;
- color: rgb(38, 50, 56);
- font-weight: 700;
- font-size: 14px;
- letter-spacing: 1px;
- background: rgba(136, 126, 126, 0.04);
- padding: 10px 20px;
- border: none;
- border-radius: 20px;
- outline: none;
- border: 2px solid rgba(0, 0, 0, 0.02);
- margin-bottom: 50px;
- margin-left: 46px;
- text-align: center;
- margin-bottom: 27px;
+  background-color: aliceblue!important;
+ color: rgb(38, 50, 56)!important;
+ font-weight: 700!important;
+ font-size: 14px!important;
+ letter-spacing: 1px!important;
+ background: rgba(136, 126, 126, 0.04)!important;
+ padding: 10px 20px!important;
+ border: none!important;
+ border-radius: 20px!important;
+ outline: none!important;
+ border: 2px solid rgba(0, 0, 0, 0.02)!important;
+ margin-bottom: 50px!important;
+ margin-left: 46px!important;
+ text-align: center!important;
+ margin-bottom: 27px!important;
 }
 .pass{
-  width:76%;
+  width:76%!important;
  cursor: pointer!important;
- color: rgb(38, 50, 56);
- font-weight: 700;
- font-size: 14px;
- letter-spacing: 1px;
- background: rgba(136, 126, 126, 0.04);
- padding: 10px 20px;
- border: none;
- border-radius: 20px;
- outline: none;
- border: 2px solid rgba(0, 0, 0, 0.02);
- margin-bottom: 50px;
- margin-left: 46px;
- text-align: center;
- margin-bottom: 27px;
- text-decoration: none;
+ color: rgb(38, 50, 56)!important;
+ font-weight: 700!important;
+ font-size: 14px!important;
+ letter-spacing: 1px!important;
+ background: rgba(136, 126, 126, 0.04)!important;
+ padding: 10px 20px!important;
+ border: none!important;
+ border-radius: 20px!important;
+ outline: none!important;
+ border: 2px solid rgba(0, 0, 0, 0.02)!important;
+ margin-bottom: 50px!important;
+ margin-left: 46px!important;
+ text-align: center!important;
+ margin-bottom: 27px!important;
+ text-decoration: none!important;
 }
 .login__button{
- cursor: pointer;
- border-radius: 3px;
- color: #fff;
- background: linear-gradient(to right, #9C27B0, #E040FB);
- border: 0;
- padding-left: 40px;
- padding-right: 40px;
- padding-bottom: 10px;
- padding-top: 10px;
- margin-left: 35%;
- font-size: 13px;
- box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+ cursor: pointer!important;
+ border-radius: 3px!important;
+ color: #fff!important;
+ background: linear-gradient(to right, #9C27B0, #E040FB)!important;
+ border: 0!important;
+ padding-left: 40px!important;
+ padding-right: 40px!important;
+ padding-bottom: 10px!important;
+ padding-top: 10px!important;
+ margin-left: 35%!important;
+ font-size: 13px!important;
+ box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04)!important;
 }
 .info{
- color:black;
- font-size:17px;
- margin-top:10px;
- padding:12px;
+ color:black!important;
+ font-size:17px!important;
+ margin-top:10px!important;
+ padding:12px!important;
 }
 .sign_up{
- font-size: 19px;
- text-align: center;
+ font-size: 19px!important;
+ text-align: center!important;
 
- margin-bottom:0;
- padding-top: 10px;
- padding-bottom:0px;
- color:black;
+ margin-bottom:0!important;
+ padding-top: 10px!important;
+ padding-bottom:0px!important;
+ color:black!important;
 }
 .click__signup{
-  margin-left: 200px;
-  margin-top:0px;
-  text-decoration: none;
-  border:1px solid  white;
-  background-color: white;
-  font-weight: bold;
-  font-size:13px;
-  letter-spacing: 0;
-  width:20px;
-  height:20px;
-  color: rgb(211, 25, 211);
+  margin-left: 200px!important;
+  margin-top:0px!important;
+  text-decoration: none!important;
+  border:1px solid  white!important;
+  background-color: white!important;
+  font-weight: bold!important;
+  font-size:13px!important;
+  letter-spacing: 0!important;
+  width:20px!important;
+  height:20px!important;
+  color: rgb(211, 25, 211)!important;
 
 
 }

@@ -15,39 +15,39 @@
  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
 }
 .name{
- width: 76%;
- color: rgb(38, 50, 56);
- font-weight: 700;
- font-size: 14px;
- letter-spacing: 1px;
- background: rgba(136, 126, 126, 0.04);
- padding: 10px 20px;
- border: none;
- border-radius: 20px;
- outline: none;
- border: 2px solid rgba(0, 0, 0, 0.02);
- margin-bottom: 50px;
- margin-left: 46px;
- text-align: center;
- margin-bottom: 20px;
+ width: 76%!important;
+ color: rgb(38, 50, 56)!important;
+ font-weight: 700!important;
+ font-size: 14px!important;
+ letter-spacing: 1px!important;
+ background: rgba(136, 126, 126, 0.04)!important;
+ padding: 10px 20px!important;
+ border: none!important;
+ border-radius: 20px!important;
+ outline: none!important;
+ border: 2px solid rgba(0, 0, 0, 0.02)!important;
+ margin-bottom: 50px!important;
+ margin-left: 46px!important;
+ text-align: center!important;
+ margin-bottom: 20px!important;
 }
 
 p{
- margin:0 20px 10px 50px;
- color:purple;
- font-size:18px;
+ margin:0 20px 10px 50px!important;
+ color:purple!important;
+ font-size:18px!important;
 }
 .signup-button{
- margin-left:300px;
- margin-top:30px;
- color:white;
- background-color: rgb(211, 25, 211);
- letter-spacing: 1px;
- height:30px;
- padding:5px;
- cursor:pointer;
- border:1px solid white;
- border-radius: 2px;
- box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+ margin-left:300px!important;
+ margin-top:30px!important;
+ color:white!important;
+ background-color: rgb(211, 25, 211)!important;
+ letter-spacing: 1px!important;
+ height:30px!important;
+ padding:5px!important;
+ cursor:pointer!important;
+ border:1px solid white!important;
+ border-radius: 2px!important;
+ box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04)!important;
 
 }
