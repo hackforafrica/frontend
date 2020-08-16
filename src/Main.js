@@ -1,5 +1,10 @@
 import React, {useState , useEffect} from 'react';
 import './Main.css';
+<<<<<<< HEAD
+import Record from './AppForRecord.js';
+=======
+import Record from './Record.js';
+>>>>>>> cb4b4a80c778aa773ecfd3c4dbc0120031b97154
 import {Link} from 'react-router-dom';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -59,7 +64,9 @@ function Main() {
      <h3 className='motivationOne'></h3>
       <ArrowForwardIosIcon className='next' onClick={nextFunction}/>
      </div>
-     <div className='speech__page'>yeeeeeeeeeeeeeeeeeeeee </div>
+     <div className='speech__page'>
+       <Record/>
+     </div>
     </div>
   </div>
  )
