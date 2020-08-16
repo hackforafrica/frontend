@@ -151,6 +151,7 @@ function createDownloadLink(blob) {
    <div id="formats">Format: start recording to see sample rate</div>
    <p><strong>Recordings:</strong></p>
    <ol id="recordingsList"></ol>
+   <input className='description'placeholder='this is a brief description of your reading performance'/>
    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
   </div>
  )
