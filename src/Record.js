@@ -22,30 +22,22 @@ var stopButton = document.getElementById("stopButton");
 
 function startRecording() {
 	console.log("recordButton clicked");
-
 	/*
 		Simple constraints object, for more advanced audio features see
 		https://addpipe.com/blog/audio-constraints-getusermedia/
 	*/
-    
-    var constraints = { audio: true, video:false }
-
+ var constraints = { audio: true, video:false }
  	/*
     	Disable the record button until we get a success or fail from getUserMedia() 
 	*/
-
 	recordButton.disabled = true;
 	stopButton.disabled = false;
-	
-
 	/*
     	We're using the standard promise based getUserMedia() 
     	https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia
 	*/
-
 	navigator.mediaDevices.getUserMedia(constraints).then(function(stream) {
 		console.log("getUserMedia() success, stream created, initializing Recorder.js ...");
-
 		/*
 			create an audio context after getUserMedia is called
 			sampleRate might change after getUserMedia is called, like it does on macOS when recording through AirPods
@@ -83,16 +75,11 @@ function startRecording() {
 }
 
 
-
 function stopRecording() {
 	console.log("stopButton clicked");
-
 	//disable the stop button, enable the record too allow for new recordings
 	stopButton.disabled = true;
 	recordButton.disabled = false;
-	
-
-
 	
 	//tell the recorder to stop the recording
 	rec.stop();
@@ -156,7 +143,7 @@ function createDownloadLink(blob) {
 }
  return (
   <div>
-   <h1>Simple Recorder.js demo</h1>
+   <h4>test your reading skills</h4>
    <div id="controls">
   	 <button id="recordButton" onClick={startRecording}>Record</button>
   	 <button id="stopButton"  onClick={stopRecording} disabled>Stop</button>

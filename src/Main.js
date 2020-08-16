@@ -1,6 +1,7 @@
 import React, {useState , useEffect} from 'react';
 import './Main.css';
 import Record from './Record.js';
+import Statement from './Statement.js';
 import {Link} from 'react-router-dom';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -59,6 +60,9 @@ function Main() {
       <ArrowBackIosIcon className='prev' onClick={nextFunction}/>
      <h3 className='motivationOne'></h3>
       <ArrowForwardIosIcon className='next' onClick={nextFunction}/>
+     </div>
+     <div className='statement__page'>
+       <Statement className='state'/>
      </div>
      <div className='speech__page'>
        <Record/>

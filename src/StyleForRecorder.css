@@ -61,11 +61,11 @@ a {
   
   button:hover, button:focus {
     outline: none;
-    background: #ff4d94;
+    background: #ff4d94 ;
   }
   
   button::-moz-focus-inner {
-    border: 0;
+    border: 0!important;
   }
   
   button:active {
@@ -99,4 +99,11 @@ a {
   
   #recordingsList{
       max-width: 28em;
+  }
+  h4{
+    font-size:20px;
+    font-weight:bold;
+    text-decoration:underline;
+    margin:0 auto;
+    color:purple;
   }
