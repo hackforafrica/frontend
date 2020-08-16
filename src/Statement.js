@@ -4,7 +4,7 @@ import React, {useState , useEffect} from 'react';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 function Statement() {
- const [words,setWords]=useState('');
+ const [words,setWords]=useState('Eating healthy will definitely boost your health');
  useEffect(()=>{
   //async code
  const getWordsData = async () =>{
