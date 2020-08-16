@@ -1,13 +1,8 @@
 import React from 'react';
-import AppForRecord from './AppForRecord';
+import Recorder from 'audio-recorder-js';
 import './StyleForRecorder.css';
 function Record() {
- //bootstrap link on the index.html file
- //script tags in index.html
- // PUT THE JS CODE HERE
- //webkitURL is deprecated but nevertheless
 URL = window.URL || window.webkitURL;
-
 var gumStream; 						//stream from getUserMedia()
 var rec; 							//Recorder.js object
 var input; 							//MediaStreamAudioSourceNode we'll be recording
@@ -15,14 +10,14 @@ var input; 							//MediaStreamAudioSourceNode we'll be recording
 // shim for AudioContext when it's not avb. 
 var AudioContext = window.AudioContext || window.webkitAudioContext;
 var audioContext //audio context to help us record
-
+var recordingsList=document.getElementById('recordingsList');
 var recordButton = document.getElementById("recordButton");
 var stopButton = document.getElementById("stopButton");
 
 
 //add events to those 2 buttons
-recordButton.addEventListener("click", startRecording);
-stopButton.addEventListener("click", stopRecording);
+//recordButton.addEventListener("click", startRecording);
+//stopButton.addEventListener("click", stopRecording);
 
 
 function startRecording() {
@@ -70,9 +65,10 @@ function startRecording() {
 		/* 
 			Create the Recorder object and configure to record mono sound (1 channel)
 			Recording 2 channels  will double the file size
-		*/
-		rec = new Recorder(input,{numChannels:1})
-
+  */
+ 
+  rec = new Recorder(input,{numChannels:1})
+  
 		//start the recording process
 		rec.record()
 
@@ -162,13 +158,13 @@ function createDownloadLink(blob) {
   <div>
    <h1>Simple Recorder.js demo</h1>
    <div id="controls">
-  	 <button id="recordButton">Record</button>
-  	 <button id="stopButton" disabled>Stop</button>
+  	 <button id="recordButton" onClick={startRecording}>Record</button>
+  	 <button id="stopButton"  onClick={stopRecording} disabled>Stop</button>
    </div>
    <div id="formats">Format: start recording to see sample rate</div>
    <p><strong>Recordings:</strong></p>
    <ol id="recordingsList"></ol>
-   
+   <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
   </div>
  )
 }
